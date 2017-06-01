@@ -1,0 +1,13 @@
+<div md-dialog-content class="map-dialog-body">
+  <div md-dialog-title id="map-title">
+    {{contact.firstName}} {{contact.lastName}}
+  </div>
+  <div md-dialog-content>
+    <iframe [src]="trustedUrl()" allowfullscreen></iframe>
+
+  </div>
+  <br>
+  <div class="map-dialog-action">
+    <button class="btnClose" md-raised-button md-dialog-close>Close</button>
+  </div>
+</div>

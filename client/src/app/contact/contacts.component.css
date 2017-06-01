@@ -1,0 +1,26 @@
+.contacts-list {
+  margin-bottom: 80px;
+}
+
+.no-contacts-div {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  color: lightgray;
+}
+
+.no-contacts-icon {
+  font-size: 250px;
+  height: 250px;
+  width: 250px;
+}
+
+.no-contacts-text {
+  font-size: 26px;
+}
+
+#btnAdd {
+  bottom: 30px;
+  left: calc(50% + 100px);
+  position: absolute;
+}

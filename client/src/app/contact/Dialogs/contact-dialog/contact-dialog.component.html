@@ -1,0 +1,33 @@
+<div class="contact-Dialog-Body">
+
+  <div class="contact-title">{{title}}</div>
+
+  <div md-dialog-content class="dialog-inputs">
+    <md-input-container floatPlaceholder="auto">
+      <input mdInput [(ngModel)]="firstName" type="text" required
+             placeholder="Firstname">
+    </md-input-container>
+    <md-input-container floatPlaceholder="auto">
+      <input mdInput [(ngModel)]="lastName" type="text" required
+             placeholder="Lastname">
+    </md-input-container>
+    <md-input-container floatPlaceholder="auto">
+      <input mdInput [(ngModel)]="phone" type="text" required
+             placeholder="Phone">
+    </md-input-container>
+    <md-input-container floatPlaceholder="auto">
+      <input mdInput [(ngModel)]="address" type="text" required
+             placeholder="Street Address">
+    </md-input-container>
+    <md-input-container floatPlaceholder="auto">
+      <input mdInput [(ngModel)]="city" type="text" required
+             placeholder="City">
+    </md-input-container>
+  </div>
+
+  <div class="contact-dialog-action">
+    <button class="btnSave" md-raised-button (click)="onSave()" >{{btnSaveText}}</button>
+    <button class="btnClose" md-raised-button (click)="dialogRef.close()">Close</button>
+  </div>
+
+</div>
